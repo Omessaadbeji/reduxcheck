@@ -1,17 +1,17 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-.body {
+body {
   background-color: rgb(125, 235, 125);
 }
 .container {
   width: 40%;
-  height: 700px;
+  height: 80vh;
   background-color: white;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10vh;
   padding: 15px;
   text-align: center;
 }
@@ -42,14 +42,31 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 450px;
+  overflow-y: scroll;
   font-size: 2em;
   text-align: left;
   padding-inline: 20px;
+  padding-top: 20px;
 }
 .todo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .todo img {
   width: 20px;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+.title {
+  display: flex;
+  gap: 10px;
+}
+.title button {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
 }
